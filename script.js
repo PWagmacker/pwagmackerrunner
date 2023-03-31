@@ -8,7 +8,7 @@ const jump = ()=> {
     setTimeout(
         () => {
             player.classList.remove("jump");
-        }, 810
+        }, 710
     );
 
     
@@ -16,7 +16,7 @@ const jump = ()=> {
 const loop = setInterval(() =>  {
     const playerpos = +window.getComputedStyle(player).bottom.replace('px', '');
     const PipePos = cano.offsetLeft;
-    if (PipePos <=  70 && PipePos > 0 && playerpos < 80){
+    if (PipePos <=  105 && PipePos > 10 && playerpos < 60){
         cano.style.animation = 'none';
         cano.style.left = `${PipePos}px`
 

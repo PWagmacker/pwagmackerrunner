@@ -30,16 +30,16 @@
 .player{
 position: absolute;
 bottom: -9px;
-left: 10px;
+left: 60px;
 
 
 }
 .jump{
-animation: jump 600ms  ease-in-out;    
+animation: jump 700ms  ease-in-out;    
 }
 .cano{
   position: absolute ;
-  bottom: -27px;
+  bottom: -5%;
  
 
   animation: pipeanim 2s infinite linear;
@@ -59,10 +59,10 @@ left: -10%;
 bottom: -9px;
     }
     50%{
-bottom: 100px;
+bottom: 120px;
     }
  55%{
-    bottom: 100px;
+    bottom: 120px;
  }
     100%{
         bottom: -9px;

@@ -5,7 +5,7 @@
 }
 
 
-.bcg{
+.background{
 
     position: relative;
     border-bottom: solid green 10px ;
@@ -17,13 +17,13 @@
 
 
 }
-.rel{
+.restart{
     
     position: absolute;
     top: -15%;
     left: 50%;
 }
-.top{
+.restartTop{
     top: 50%;
 }
 
@@ -37,14 +37,14 @@ left: 60px;
 .jump{
 animation: jump 700ms  ease-in-out;    
 }
-.cano{
+.pipe{
   position: absolute ;
   bottom: -5%;
  
 
-  animation: pipeanim 2s infinite linear;
+  animation:pipeAnim 2s infinite linear;
 }
-@keyframes pipeanim{
+@keyframes pipeAnim{
     from{
 left: 110%;
     }

@@ -1,6 +1,6 @@
 const player = document.querySelector(".player");
-const cano = document.querySelector(".cano");
-const buttonRestart = document.querySelector(".rel");
+const pipe = document.querySelector(".pipe");
+const buttonRestart = document.querySelector(".restart");
 
 
 const jump = ()=> {
@@ -14,16 +14,16 @@ const jump = ()=> {
     
 }
 const loop = setInterval(() =>  {
-    const playerpos = +window.getComputedStyle(player).bottom.replace('px', '');
-    const PipePos = cano.offsetLeft;
-    if (PipePos <=  105 && PipePos > 10 && playerpos < 60){
-        cano.style.animation = 'none';
-        cano.style.left = `${PipePos}px`
+    const playerPosition = +window.getComputedStyle(player).bottom.replace('px', '');
+    const PipePosition = pipe.offsetLeft;
+    if (PipePosition <=  105 && PipePosition > 10 && playerPosition < 60){
+        pipe.style.animation = 'none';
+        pipe.style.left = `${PipePosition}px`
 
         player.style.animation = 'none';
-        player.style.bottom = `${playerpos}px`
+        player.style.bottom = `${playerPosition}px`
 
-       buttonRestart.classList.add("top")
+       buttonRestart.classList.add("restartTop")
     
        
     }

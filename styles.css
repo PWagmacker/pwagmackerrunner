@@ -35,11 +35,11 @@ left: 10px;
 
 }
 .jump{
-animation: jump 800ms  ease-in-out;    
+animation: jump 600ms  ease-in-out;    
 }
 .cano{
   position: absolute ;
-  bottom: -10px;
+  bottom: -27px;
  
 
   animation: pipeanim 2s infinite linear;
@@ -59,10 +59,10 @@ left: -10%;
 bottom: -9px;
     }
     50%{
-bottom: 180px;
+bottom: 100px;
     }
  55%{
-    bottom: 180px;
+    bottom: 100px;
  }
     100%{
         bottom: -9px;

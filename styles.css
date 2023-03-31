@@ -1,3 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .bcg{
-    border: solid black 100px;
+
+    position: relative;
+    border-bottom: solid green 10px ;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: url(https://cdn.wallpapersafari.com/14/72/HYRa9O.jpg);
+
+
+}
+.rel{
+    
+    position: absolute;
+    top: -15%;
+    left: 50%;
+}
+.top{
+    top: 50%;
+}
+
+.player{
+position: absolute;
+bottom: -9px;
+left: 10px;
+
+
+}
+.jump{
+animation: jump 800ms  ease-in-out;    
+}
+.cano{
+  position: absolute ;
+  bottom: -10px;
+ 
+
+  animation: pipeanim 2s infinite linear;
+}
+@keyframes pipeanim{
+    from{
+left: 110%;
+    }
+    to{
+left: -10%;
+    }
+
+}
+
+@keyframes jump {
+    0%{
+bottom: -9px;
+    }
+    50%{
+bottom: 180px;
+    }
+ 55%{
+    bottom: 180px;
+ }
+    100%{
+        bottom: -9px;
+    }
+    
 }
